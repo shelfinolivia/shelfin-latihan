@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "./App.css";
-import NoteItem from "./noteItem";
+import NoteItem from "./NoteItem";
 import FormTambah from "./FormTambah";
 import FormEdit from "./FormEdit";
 // import { nanoid } from 'nanoid'
