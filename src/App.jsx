@@ -35,16 +35,16 @@ function App() {
                     {isLoggedin ? (
                         <Route>
                             <Route path={"/Note"} element={<Note />} />
-                            <Route path="/Login" element={<Navigate to={"/Note"} />} />
+                            <Route path="/" element={<Navigate to={"/Note"} />} />
                         </Route>
                     ) : (
                         <>
                             <Route path={"/Registrasi"} element={<Registrasi />} />
-                            <Route path={"Login"} element={<Login onLogin={handleLogin} />} />
-                            <Route path="*" element={<Navigate to={"/Login"} />} />
+                            <Route path={"/"} element={<Login onLogin={handleLogin} />} />
+                            <Route path="*" element={<Navigate to={"/"} />} />
                         </>)}
-
-
+                    
+                    <Route path="*" element={<Navigate to={"/"}/>}/>
                 </Route>
 
                 {/* {token !== null ? 
