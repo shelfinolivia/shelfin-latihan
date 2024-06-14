@@ -32,7 +32,7 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route element={<Layout token={token}/>}>
-                    {isLoggedin ? (
+                    {isLoggedin == true ? (
                         <Route>
                             <Route path={"/Note"} element={<Note />} />
                             <Route path="/" element={<Navigate to={"/Note"} />} />
